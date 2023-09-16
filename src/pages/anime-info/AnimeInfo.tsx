@@ -30,7 +30,7 @@ function AnimeInfo() {
           <ul>
             <li>Format: {animeInfo.format}</li>
             <li>Average Score: {animeInfo.averageScore}</li>
-            <li>Average Score: {animeInfo.averageScore}</li>
+            <li>Mean Score: {animeInfo.meanScore}</li>
             <li>Source: {animeInfo.source}</li>
             <li>Season: {animeInfo.season}</li>
             <li>Duration: {animeInfo.duration} minutes</li>
