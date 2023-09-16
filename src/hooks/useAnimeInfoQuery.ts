@@ -89,7 +89,11 @@ function fetchAnimeInfo(id: number) {
 }
 
 function useAnimeInfoQuery(id: number) {
-  return useQuery(['anime', id], () => fetchAnimeInfo(id));
+  return useQuery(['anime', id], () => fetchAnimeInfo(id), {
+    refetchInterval: false,
+    refetchOnWindowFocus: false,
+    refetchOnMount: false,
+  });
 }
 
 export default useAnimeInfoQuery;

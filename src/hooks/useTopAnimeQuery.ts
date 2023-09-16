@@ -54,7 +54,11 @@ function getTopAnime() {
 }
 
 function useTopAnimeQuery() {
-  return useQuery('top', getTopAnime);
+  return useQuery('top', getTopAnime, {
+    refetchInterval: false,
+    refetchOnWindowFocus: false,
+    refetchOnMount: false,
+  });
 }
 
 export default useTopAnimeQuery;
