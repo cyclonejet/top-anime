@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import App from './App.tsx';
 
 import './index.css';
+import AnimeInfo from './pages/anime-info/AnimeInfo.tsx';
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/anime/:id',
+    element: <AnimeInfo />,
   },
 ]);
 
